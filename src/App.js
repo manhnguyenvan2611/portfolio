@@ -185,7 +185,7 @@ function App() {
               <div className="skillsSlide">
                 <h3 className="slide__h3">Certificate</h3>
                 <div className="slide">
-                  <span className="slide__span">Toeic:</span> 700<br/>
+                  <span className="slide__span">Toeic:</span> ...<br/>
                 </div>
               </div>
 
