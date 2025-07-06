@@ -1,0 +1,35 @@
+/**
+* summary .section
+*/
+.summary {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  /* align-items: flex-end; */
+}
+
+/*summary intro*/
+.summaryIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*heading*/
+.summary__h2 {
+  font-size: var(--fonts2);
+  font-weight: var(--fontw1);
+}
+
+/*summary's banner .div*/
+.summaryBanner {
+  border-radius: var(--bdr);
+}
+
+/*img*/
+.summary__img {
+  width: 600px;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--bdr);
+  border: var(--bd1);
+}

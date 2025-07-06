@@ -1,0 +1,39 @@
+/**
+* education .section
+*/
+.edu {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+}
+
+/*education intro .div*/
+.eduIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+/*education heading*/
+.edu__h2 {
+  font-size: var(--fonts2);
+  font-weight: var(--fontw1);
+}
+
+/*education images .div*/
+.eduImages {
+  display: flex;
+  gap: 20px;
+}
+
+/*img*/
+.edu__img {
+  width: 250px;
+  height: 250px;
+  border: var(--bd1);
+  border-radius: var(--bdr);
+}

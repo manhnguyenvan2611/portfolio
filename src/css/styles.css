@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Montserrat, Inter, sans-serif, Arial, Helvetica;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --bg:white;
+  --bd: 1px solid rgba(0,0,0,0.5);
+  --bd1: 1px solid rgba(0,0,0,0.3);
+  --fonts: 24px;
+  --fonts1: 50px;
+  --fonts2: 100px;
+  --fontw: 750;
+  --fontw1: 1000;
+  --bdr: 10px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+body {
+  background: var(--bg);
+}
+
+/**
+* header
+*/
+.header {
+  background: rgba(255,255,255,0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  height: 70px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  z-index: 200;
+}
+
+/*logo*/
+.logoBtn {
+  padding: 0 20px;
+  height: 50px;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  font-weight: var(--fontw);
+}
+
+/*header left part .div*/
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+}
+
+/*user account .div*/
+.user {
+  display: flex;
+  gap: 10px;
+  height: 100%;
+  align-items: center;
+  font-weight: var(--fontw);
+}
+
+/*user account button, search button*/
+.userBtn, .searchBtn {
+  border-radius: 100%;
+  border: var(--bd);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*img*/
+.user__img, .search__img {
+  width: 30px;
+  height: 30px;
+}
+
+/*menu button .button*/
+.menuBtn {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+
+/**
+* main
+*/
+.main {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: fit-content;
+  min-height: var(100vh - 90px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+/**
+* modal .div
+*/
+.popup {
+  width: 640px;
+  aspect-ratio: 16 / 9;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  position: fixed;
+  top: 100px;
+  left: calc((100% - 640px) / 2);
+  z-index: 350;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  overflow-y: scroll;
+  background: var(--bg);
+  display: none;
+}
+
+.popup-display {
+  display: flex;
+}
+
+/*project details .div*/
+.popupInfor {
+  display: flex;
+  flex-direction: column;
+  gap:  10px;
+  width: 300px;
+}
+
+.popup__name {
+  font-size: var(--fonts);
+  font-weight: var(--fontw);
+}
+
+.popup__span {
+  font-weight: 650;
+}
+
+/*project image .div*/
+.popupImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+}
+
+/*img*/
+.popup__img {
+  width: 250px;
+  height: 250px;
+  border: var(--bd1);
+  border-radius: var(--bdr);
+}
+
+.popupBtn {
+  border: var(--bd);
+  border-radius: var(--bdr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  height: 30px;
+  background: var(--bg);
+}
+
+/**
+* footer .footer
+*/
+.footer {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: var(--bd);
+  border-radius: var(--bdr);
+  /* margin-bottom: -20px;
+  margin-left: -20px;
+  margin-right: -20px; */
+}
