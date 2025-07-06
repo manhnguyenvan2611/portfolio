@@ -147,7 +147,7 @@ function App() {
           <div className="eduIntro">
             <h2 className="edu__h2">EDUCATION</h2>
             <p className="edu__p">
-              I’m the final year student from University of Science, i’m major in mathematic and computer science. I’ve learned a lot from my university, it’s not only give me knowledges it also gives me so many recollections i will never forget.
+              I’m the final year student from University of Science, i’m major in mathematic and computer science. I’ve learned a lot from my university, it not only give me knowledges it also gives me so many recollections i will never forget.
               <br/> 2021 - 2026
             </p>
           </div>
