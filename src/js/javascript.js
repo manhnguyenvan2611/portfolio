@@ -3,9 +3,10 @@ import {projects} from './data/projects.js';
  * display menu
  */
 let menuBtn = document.querySelector('.menuBtn');
-let headerLeft = document.querySelector('.headerLeft');
+let headerNav = document.querySelector('.headerNav');
+
 menuBtn.onclick = function () {
-  headerLeft.classList.toggle('headerLeft-display');
+  headerNav.classList.toggle('headerNav-display');
 }
 
 /**
@@ -13,6 +14,7 @@ menuBtn.onclick = function () {
  */
 let projectsSlides = document.querySelector('.projectsSlides');
 let projectsHtml = '';
+
 projects.forEach(project => {
   projectsHtml += `
   <div class="projectsSlide">
@@ -44,6 +46,7 @@ let popupImg = document.querySelector('.popup__img');
 let projectsBtn = document.querySelectorAll('.projectsBtn');
 let projectInforHtml = '';
 let imgPath = '';
+
 projectsBtn.forEach(btn => {
   btn.onclick = function () {
     let projectId = btn.dataset.projectId;
@@ -74,6 +77,7 @@ projectsBtn.forEach(btn => {
 
 /*close modal*/
 let popupBtn = document.querySelector('.popupBtn');
+
 popupBtn.onclick = function () {
   modal.classList.remove('popup-display');
 }

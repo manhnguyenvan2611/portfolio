@@ -2,17 +2,19 @@
 * summary .section
 */
 .summary {
+  width: 100%;
+  padding: 20px;
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 20px;
   align-items: center;
-  /* align-items: flex-end; */
 }
 
 /*summary intro*/
 .summaryIntro {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 
 /*heading*/
@@ -24,12 +26,13 @@
 /*summary's banner .div*/
 .summaryBanner {
   border-radius: var(--bdr);
+  width: 100%;
 }
 
 /*img*/
 .summary__img {
-  width: 600px;
-  aspect-ratio: 1 / 1;
+  width: 100%;
+  aspect-ratio: 4 / 1;
   border-radius: var(--bdr);
   border: var(--bd1);
 }

@@ -1,18 +1,9 @@
-@media (max-width: 1240px) {
-  /**
-  * summary .section
-  */
-  .summary {
-    flex-direction: column;
-  }
-
+@media (max-width: 900px) {
   /*img*/
   .summary__img {
-    width: 400px;
+    aspect-ratio: 4 / 3;
   }
-}
 
-@media (max-width: 900px) {
   /*education images .div*/
   .eduImages {
     overflow-x: scroll;
@@ -33,6 +24,7 @@
   /*img*/
   .skills__img {
     width: 400px;
+    aspect-ratio: 4 / 3;
   }
 
   /*skills slides .div*/
@@ -91,23 +83,22 @@
     padding: 10px;
   }
 
-  /*header left part .div*/
-  .headerLeft {
-    flex-direction: column;
-    align-items: flex-end;
+  /*nav*/
+  .headerNav {
     position: absolute;
-    top: 100%;
-    right: 0;
-    gap: 10px;
-    height: fit-content;
+    top: 80px;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 50px;
+    gap: 20px;
     background: var(--bg);
-    padding: 10px;
     border: var(--bd);
     border-radius: var(--bdr);
     display: none;
   }
 
-  .headerLeft-display {
+  .headerNav-display {
     display: flex;
   }
 
@@ -120,35 +111,16 @@
   * main
   */
   .main {
-    top: 80px;
     min-height: var(100vh - 80px);
+  }
+
+  .summary, .edu, .skills, .projects {
     padding: 10px;
-    gap: 20px;
   }
 
   .summary__h2, .edu__h2, .skills__h2, .projects__h2 {
     width: 100%;
     text-align: left;
-  }
-
-  /**
-  * summary .section
-  */
-  .summary {
-    gap: 20px;
-  }
-
-  /*img*/
-  .summary__img {
-    width: 100%;
-  }
-
-  /**
-  * education .section
-  */
-  .edu {
-    padding: 10px;
-    gap: 20px;
   }
 
   /*img*/

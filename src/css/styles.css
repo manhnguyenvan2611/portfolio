@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --bg:white;
+  --bg-bl: #282728;
+  --bg-seasalt: #F8FAFA;
+  --bg-gr: #F5F5F5;
+  --cl-w: white;
+  --bd: 1px solid rgba(0,0,0,0.2);
+  --bd1: 1px solid rgba(0,0,0,0.1);
+  --fonts: 24px;
+  --fonts1: 50px;
+  --fonts2: 100px;
+  --fontw: 750;
+  --fontw1: 1000;
+  --bdr: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -10,18 +26,6 @@
   font-size: 18px;
   font-family: Montserrat, Inter, sans-serif, Arial, Helvetica;
   -webkit-tap-highlight-color: transparent;
-}
-
-:root {
-  --bg:white;
-  --bd: 1px solid rgba(0,0,0,0.5);
-  --bd1: 1px solid rgba(0,0,0,0.3);
-  --fonts: 24px;
-  --fonts1: 50px;
-  --fonts2: 100px;
-  --fontw: 750;
-  --fontw1: 1000;
-  --bdr: 10px;
 }
 
 img {
@@ -37,6 +41,10 @@ button {
 
 body {
   background: var(--bg);
+}
+
+a {
+  color: black;
 }
 
 /**
@@ -59,9 +67,21 @@ body {
   z-index: 200;
 }
 
+/*nav*/
+.headerNav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/*a*/
+.nav__link {
+  font-weight: var(--fontw);
+}
+
 /*logo*/
 .logoBtn {
-  padding: 0 20px;
+  width: 50px;
   height: 50px;
   border: var(--bd);
   border-radius: var(--bdr);
@@ -72,7 +92,7 @@ body {
 .headerLeft {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   height: 50px;
 }
 
@@ -120,10 +140,9 @@ body {
   bottom: 0;
   height: fit-content;
   min-height: var(100vh - 90px);
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 20px;
 }
 
 /**
@@ -199,14 +218,12 @@ body {
 * footer .footer
 */
 .footer {
-  height: 500px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: var(--bd);
   border-radius: var(--bdr);
-  /* margin-bottom: -20px;
-  margin-left: -20px;
-  margin-right: -20px; */
+  margin-top: -20px;
 }

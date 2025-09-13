@@ -13,9 +13,10 @@ function App() {
      * display menu
      */
     let menuBtn = document.querySelector('.menuBtn');
-    let headerLeft = document.querySelector('.headerLeft');
+    let headerNav = document.querySelector('.headerNav');
+
     menuBtn.onclick = function () {
-      headerLeft.classList.toggle('headerLeft-display');
+      headerNav.classList.toggle('headerNav-display');
     }
 
     /**
@@ -23,6 +24,7 @@ function App() {
      */
     let projectsSlides = document.querySelector('.projectsSlides');
     let projectsHtml = '';
+    
     projects.forEach(project => {
       projectsHtml += `
       <div class="projectsSlide">
@@ -54,6 +56,7 @@ function App() {
     let projectsBtn = document.querySelectorAll('.projectsBtn');
     let projectInforHtml = '';
     let imgPath = '';
+
     projectsBtn.forEach(btn => {
       btn.onclick = function () {
         let projectId = btn.dataset.projectId;
@@ -84,6 +87,7 @@ function App() {
 
     /*close modal*/
     let popupBtn = document.querySelector('.popupBtn');
+
     popupBtn.onclick = function () {
       modal.classList.remove('popup-display');
     }
@@ -91,22 +95,26 @@ function App() {
   return (
     <>
       <header className="header">
-        <button className="logoBtn">Coder</button>
+        <button className="logoBtn" onClick={() => {window.location.href='#';}}>
+          <img className="logo__img" src="/images/logo.jpg" alt="logo"/>
+        </button>
+
+        <nav className="headerNav">
+          <a className="nav__link" href="#summary">Summary</a>
+          <a className="nav__link" href="#edu">Education</a>
+          <a className="nav__link" href="#skills">Skills</a>
+          <a className="nav__link" href="#projects">Projects</a>
+        </nav>
+
         <div className="headerLeft">
-          <div className="user">
-            Hi! John
-            <button className="userBtn">
-              <img className="user__img" src="./images/icons/user.png" alt="account"/>
-            </button>
-          </div>
           <button className="searchBtn">
             <img className="search__img" src="./images/icons/search.png" alt="search"/>
           </button>
-        </div>
 
-        <button className="menuBtn">
+          <button className="menuBtn">
           <img className="menu__img" src="./images/icons/menu.png" alt="menu"/>
         </button>
+        </div>
       </header>
 
       <div className="popup">
@@ -130,7 +138,7 @@ function App() {
       </div>
 
       <main className="main">
-        <section className="summary">
+        <section className="summary" id="summary">
           <div className="summaryIntro">
             <h2 className="summary__h2">SUMMARY</h2>
             <p className="summary__p">
@@ -143,7 +151,7 @@ function App() {
           </div>
         </section>
 
-        <section className="edu">
+        <section className="edu" id="edu">
           <div className="eduIntro">
             <h2 className="edu__h2">EDUCATION</h2>
             <p className="edu__p">
@@ -159,7 +167,7 @@ function App() {
           </div>
         </section>
 
-        <section className="skills">
+        <section className="skills" id="skills">
           <h2 className="skills__h2">SKILLS</h2>
 
           <div className="skillsContent">
@@ -193,7 +201,7 @@ function App() {
           </div>
         </section>
 
-        <section className="projects">
+        <section className="projects" id="projects">
           <h2 className="projects__h2">PROJECTS</h2>
 
           <div className="projectsSlides">

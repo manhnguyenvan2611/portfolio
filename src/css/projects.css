@@ -1,12 +1,15 @@
-
 /**
 * projects .section
 */
 .projects {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   align-items: flex-end;
+  border: var(--bd);
+  background: var(--bg-gr);
+  padding: 10px;
 }
 
 /*projects heading*/
@@ -25,6 +28,7 @@
 
 /*projects slide .div*/
 .projectsSlide {
+  background: var(--bg);
   padding: 10px;
   border: var(--bd);
   border-radius: var(--bdr);
