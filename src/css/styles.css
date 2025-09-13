@@ -88,6 +88,11 @@ a {
   font-weight: var(--fontw);
 }
 
+/*img*/
+.logo__img {
+  border-radius: var(--bdr);
+}
+
 /*header left part .div*/
 .headerLeft {
   display: flex;
@@ -96,17 +101,8 @@ a {
   height: 50px;
 }
 
-/*user account .div*/
-.user {
-  display: flex;
-  gap: 10px;
-  height: 100%;
-  align-items: center;
-  font-weight: var(--fontw);
-}
-
 /*user account button, search button*/
-.userBtn, .searchBtn {
+.searchBtn {
   border-radius: 100%;
   border: var(--bd);
   width: 50px;
@@ -117,7 +113,7 @@ a {
 }
 
 /*img*/
-.user__img, .search__img {
+.search__img {
   width: 30px;
   height: 30px;
 }
