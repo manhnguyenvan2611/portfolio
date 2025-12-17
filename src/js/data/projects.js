@@ -30,6 +30,6 @@ export const projects = [
     tech: "Reactjs",
     des: "A simple portfolio in reactjs using yarn to initiate. This portfolio is just for showing off my skills.",
     src: "https://github.com/manhnguyenvan2611/portfolio",
-    demo: "https://192.168.5.12"
+    demo: "portfolio-pink-alpha-39.vercel.app"
   },
 ];

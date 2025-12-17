@@ -144,7 +144,7 @@ function App() {
           <div className="summaryIntro">
             <h2 className="summary__h2">SUMMARY</h2>
             <p className="summary__p">
-              Hello, I’m a coder and i passionate for programming and graphic design. I hope that i can create something wonderful from what i have learned for you as well as for others. Feel free to get contact with me if you have any interest in my work
+              Hello, I’m a coder and i passionate for programming and graphic design. Feel free to get contact with me if you have any interest in my work.
             </p>
           </div>
 
@@ -157,7 +157,7 @@ function App() {
           <div className="eduIntro">
             <h2 className="edu__h2">EDUCATION</h2>
             <p className="edu__p">
-              I’m the final year student from University of Science, i’m major in mathematic and computer science. I’ve learned a lot from my university, it not only gives me knowledges it also gives me so many recollections i will never forget.
+              I’m a student from University of Science (HUS - VNU), i’m major in mathematic and computer science.
               <br/> 2021 - 2026
             </p>
           </div>
@@ -275,8 +275,8 @@ function App() {
         </section>
 
         <footer className="footer">
-          <div className="footerInfor">Numbers: 012345678</div>
-          <div className="footerInfor">Email: 1234@gmail.com</div>
+          <div className="footerInfor">Numbers: 0378216206</div>
+          <div className="footerInfor">Email: manhnguyenvan2611@gmail.com</div>
         </footer>
       </main>
     </>
