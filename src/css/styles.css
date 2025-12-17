@@ -156,7 +156,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
   background: var(--bg);
   display: none;
 }
@@ -171,6 +172,8 @@ a {
   flex-direction: column;
   gap:  10px;
   width: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .popup__name {

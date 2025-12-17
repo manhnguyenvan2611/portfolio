@@ -26,6 +26,8 @@ function App() {
     let projectsHtml = '';
     
     projects.forEach(project => {
+      let srcLink = project.src;
+
       projectsHtml += `
       <div class="projectsSlide">
         <img class="projects__img" src="./images/projects/${project.img}" alt="image"/>
@@ -37,7 +39,7 @@ function App() {
             <button class="projectsBtn" data-project-id="${project.id}">See more</button>
           </div>
 
-          <button class="arrowBtn" onclick="window.location.href='';">
+          <button class="arrowBtn" target="_blank" onclick="window.location.href='${srcLink}';">
             <img class="arrow__img" src="./images/icons/diagonal-arrow.png" alt="redirect"/>
           </button>
         </div>
@@ -186,7 +188,7 @@ function App() {
               <div className="skillsSlide">
                 <h3 className="slide__h3">Tools</h3>
                 <div className="slide">
-                  VS Code, Eclipse, XAMPP, DRAW.IO, Github, Figma, Photoshop, Illustrator, Word, Powerpoint, Excel
+                  VS Code, Eclipse, XAMPP, DRAW.IO, Github, SpringToolSuite, Workbench, Figma, Photoshop, Illustrator, Word, Powerpoint, Excel
                 </div>
               </div>
 

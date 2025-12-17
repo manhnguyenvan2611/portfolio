@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: "FACE RECOGNITION",
-    img: "photo-editor.jpg",
+    img: "photo-editor.png",
     time: "03/2025 - 04/2025",
     team: 1,
     tech: "Django, SQLite, HTML, CSS, Javascript",
@@ -13,7 +13,7 @@ export const projects = [
   {
     id: 2,
     name: "PROJECT MANAGEMENT",
-    img: "project-management.jpg",
+    img: "project-management.png",
     time: "06/2025 - 07/2025",
     team: 1,
     tech: "Springboot, MySQL, HTML, CSS, Javascript",
@@ -24,7 +24,7 @@ export const projects = [
   {
     id: 3,
     name: "PORTFOLIO",
-    img: "portfolio.jpg",
+    img: "portfolio.png",
     time: "07/2025 - 07/2025",
     team: 1,
     tech: "Reactjs",
