@@ -66,7 +66,7 @@ function App() {
         modal.classList.add('popup-display');
 
         projects.forEach(project => {
-          if (projectId === project.id) {
+          if (projectId == project.id) {
             imgPath = `./images/projects/${project.img}`;
             projectInforHtml = `
               <h3 class="popup__name">${project.name}</h3>
