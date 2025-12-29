@@ -32,4 +32,15 @@ export const projects = [
     src: "https://github.com/manhnguyenvan2611/portfolio",
     demo: "portfolio-pink-alpha-39.vercel.app"
   },
+  {
+    id: 4,
+    name: "ECOMMERCE",
+    img: "ecommerce.png",
+    time: "12/2025 - 12/2025",
+    team: 1,
+    tech: "Reactjs",
+    des: "An electronics ecommerce.",
+    src: "https://github.com/manhnguyenvan2611/ecommerce",
+    demo: "https://ecommerce-swart-ten-79.vercel.app/"
+  },
 ];
